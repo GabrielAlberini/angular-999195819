@@ -1,0 +1,17 @@
+@if (islogin === true) {
+<section>
+  <h1>Bienvenido {{ name }} al curso de Angular</h1>
+  <h2><app-user /></h2>
+  <p>Tema de hoy: {{ content.toUpperCase() }}</p>
+  <p><b>{{ title }}</b></p>
+  <ul>
+    <li>Instalación</li>
+    <li>Configuración inicial</li>
+    <li>Extensiones</li>
+  </ul>
+</section>
+} @else {
+<h1>Debes iniciar sesión</h1>
+}
+
+<router-outlet />
