@@ -27,5 +27,5 @@ export class AppComponent {
   title = 'clase-2-12-12-2024';
   name = "Gabriel"
   content = "Introducción Angular"
-  islogin = true
+  islogin = false
 }

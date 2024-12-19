@@ -1,0 +1,15 @@
+<section>
+  @if(isLogin) {
+  <button (click)="isLogin = false">Cerrar sesión</button>
+  <app-user themeClass={{theme}} />
+  <h2>Los temas que veremos hoy serán:</h2>
+  <app-itemlist />
+  <app-content />
+  @defer {
+  <app-images />
+  }
+  } @else {
+  <button (click)="isLogin = true">Iniciar sesión</button>
+  <h1>Por favor inicie sesión</h1>
+  }
+</section>
